@@ -64,7 +64,7 @@
 
 #design-by .design-container .info-section .info-list li {
     list-style: none;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 400;
     margin-bottom: 14.5px;
 }
@@ -72,10 +72,18 @@
 #design-by .design-container .info-section .info-list li .circle {
     background: #FEA83B;
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     border-radius: 50%;
     margin-right: 10px;
+    position: relative;
+    top: 4px;
+}
+
+#design-by .design-container .info-section .info-list li .circle .fa {
+    position: absolute;
+    top: 2.5px;
+    left: 2px;
 }
 
 #design-by .design-container .info-section .white-btn {
@@ -141,10 +149,45 @@
 
 /* Tablets Devices */
 @media only screen and (max-width: 1023px) {
-  
+    #design-by .design-container .icons-section .refresh-circle {
+    left: 45%;
+    top: 44%;
+    }
+}
+
+@media only screen and (max-width: 915px) {
+    #design-by .design-container .icons-section .refresh-circle {
+    left: 44%;
+    }
 }
 
 /* Mobile Devices */  
 @media only screen and (max-width: 767px) {
-  
+    #design-by .design-container .info-section {
+        width: 100%;
+        display: inline-block;
+        float: left;
+    }
+
+    #design-by .design-container .info-section .info-list li {
+        line-height: 2;
+    }
+
+    #design-by .design-container .icons-section {
+        width: 100%;
+        background: #fff;
+        display: inline-block;
+        float: left;
+        position: relative;
+    }
+
+    #design-by .design-container .icons-section .refresh-circle {
+        display: none;
+    }
+
+    #design-by .design-container .bg-container {
+        overflow: hidden;
+        padding: 20px;
+    }
+    
 }
